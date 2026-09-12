@@ -34,13 +34,21 @@ def summarise(payouts):
 
     Only PAID rows count towards the total. A failed or pending payout has not
     moved any money.
+
+    `fee_minor` can be missing or `null` in the real export. Both are treated
+    as a zero fee rather than an error - see SOLUTION.md for why.
     """
     totals = {}
 
     for row in payouts:
+        if row["status"] != "paid":
+            continue
+
         instructor = row["instructor_id"]
         amount = row["amount_minor"]
-        fee = row["fee_minor"]
+        fee = row.get("fee_minor")
+        if fee is None:
+            fee = 0
 
         net = amount - fee
 
@@ -56,7 +64,12 @@ def main(argv):
         print("usage: reconcile_earnings.py <payouts.json>", file=sys.stderr)
         return 1
 
-    payouts = load_payouts(argv[1])
+    try:
+        payouts = load_payouts(argv[1])
+    except (OSError, json.JSONDecodeError) as exc:
+        print(f"error: could not read payouts file '{argv[1]}': {exc}", file=sys.stderr)
+        return 2
+
     totals = summarise(payouts)
 
     print("instructor_id,total_net_minor")

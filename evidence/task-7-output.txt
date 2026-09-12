@@ -1,0 +1,14 @@
+# Task 7 — reconcile_earnings.py
+
+## Successful run
+Command: py -3 python\reconcile_earnings.py python\payouts.json
+Exit code: 0
+
+instructor_id,total_net_minor
+7,84750
+
+## Missing file
+Command: py -3 python\reconcile_earnings.py python\no-such-file.json
+Exit code: 2
+
+error: could not read payouts file 'python\no-such-file.json': [Errno 2] No such file or directory: 'python\\no-such-file.json'

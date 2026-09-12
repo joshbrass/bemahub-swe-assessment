@@ -1,0 +1,3 @@
+# login
+curl.exe -s -X POST http://localhost:8080/wp-json/bemalearn/v1/auth/login -H "Content-Type: application/json" -d "{\"email\":\"learner@example.test\",\"password\":\"assessment123\"}"
+curl.exe -s -X POST http://localhost:8080/wp-json/bemalearn/v1/auth/login -H "Content-Type: application/json" -d "{\"email\":\"instructor@example.test\",\"password\":\"assessment123\"}"

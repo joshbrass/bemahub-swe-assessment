@@ -21,7 +21,7 @@ class BL_Earnings_Controller {
         register_rest_route('bemalearn/v1', '/me/earnings', [
             'methods'             => 'GET',
             'callback'            => [$this, 'get_earnings'],
-            'permission_callback' => [$this, 'check_authenticated'],
+            'permission_callback' => [$this, 'check_instructor'],
         ]);
 
         register_rest_route('bemalearn/v1', '/me/withdrawals', [
@@ -174,6 +174,14 @@ class BL_Earnings_Controller {
             if ($existing) {
                 return new WP_REST_Response($this->shape($existing), 200);
             }
+        }
+
+        if ($amount < self::MINIMUM_WITHDRAWAL_MINOR) {
+            return new WP_Error(
+                'below_minimum',
+                'The requested amount is below the minimum withdrawal.',
+                ['status' => 422]
+            );
         }
 
         $available = (int) $wpdb->get_var($wpdb->prepare(
