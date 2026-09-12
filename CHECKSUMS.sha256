@@ -1,0 +1,57 @@
+BemaHub Software Engineer Assessment Starter v1.0
+SHA-256 manifest - CANDIDATE package payload
+
+Verify a single file:   sha256sum <path>        (Linux/macOS)
+                        Get-FileHash <path>     (PowerShell)
+
+SHA-256                                                           FILE
+----------------------------------------------------------------  ----------------------------------------
+7c56acbd500fe30db7037e7c60c22f107f27649114567d43816704efcbe99493  .gitignore
+2961dbd9a6179d398a71fce633821ace115fbda5529be2f3749e4f9b012975c8  README.md
+934c725260746b105f1c5d89a3b0194682cd456c9dc4db1c5ab26fe7950f175d  answers/task-5.md
+51731ecf8128e36020f9fb193dde7f121818a56dafa0058b33d7f5210e5ba06d  answers/task-6.md
+d3633d372db2acdb746c796b7b55dd20676e595ae990a213a61052de765b4d81  database/README.md
+3a022d0c47cf9d5f7c4ae7110f4a9606fbf99ca4ae7c2314b5b767323952ae43  database/migrations/001_initial.sql
+06480e2d8cbb2fed4a5b372758f0005b152f129a8124eb4ceb6092fc09e848d3  docs/API-CONTRACT.md
+4fff1147edfa0adeb2001a2a644bd82ed8c116e63b5d2cc20a6860c6edc5da36  docs/SETUP.md
+cdf6d5f3c17106b4c330fff135150b6fddbbc77830a4e375283cf9f82276ea07  docs/SUBMISSION-TEMPLATE.md
+98a34e2d05c2894f7c0c4cee152426ae4114f1d02611ce545bdbbd4f53ac4217  docs/TASK-1-FRONTEND-LIST.md
+e9f8eb832d0ca147454eb61d62688ab2c01abdbadcaba46cc487c9d8fabcee11  docs/TASK-2-FRONTEND-AUTH.md
+8a6cc4e3fa66f146746f54ee3a14005c0d5583f9eef4e1ddb34ecff3f50543dc  docs/TASK-3-FRONTEND-FORM.md
+f97918518ecacab71cffeb1185a4fbaa8a939bb611d6c59ea47e357ed38bc8d8  docs/TASK-4-PHP.md
+f323f1e805e9a38f87929d763ef10077ae5feb8b21ec68d66784b73638324595  docs/TASK-5-DATABASE.md
+c00080be745f47d702267dbda42114e7ef2d0c76fda725b2585a93da95b162b3  docs/TASK-6-INFRASTRUCTURE.md
+064db71f4021cc32b2eb824eb06fcaccb2d9c18cc86ef22c5d1c6e7d244e9214  docs/TASK-7-PYTHON.md
+4257fd9c3279d913cde541ab4970614b4fbf30b080f82de52ffbe16770ff745d  evidence/README.md
+3c52cfb741a5079d3444b5b0483f506c039a020e7ecd3b35efba7c975adfd68c  frontend/.env.local.example
+e462a655754db9df18b4a657454a7b6a88717ffded4e89403b2b3a47c6603fc3  frontend/next-env.d.ts
+c756de99cd5b24fe69b4f51a23a2529415eb5aed745fd66653928338a88a2349  frontend/next.config.mjs
+d4aa9e236bc9c42ff2f5e39290f31c9971f2d5978b68d2f1042c3c257b985015  frontend/package-lock.json
+7ff7b4b3a63f9b228de02c14d411f63a9dd09735ad32716071a516f630163594  frontend/package.json
+08910ce1d5cd87d2167e9c78b77262bf985b3f07dc5037ff745ecd6a759fd0c0  frontend/postcss.config.mjs
+d52881b04c0990b826d7ba72655e9ff38e556ab4740c4a267369d268c93d24a8  frontend/tailwind.config.ts
+1519b3e409b0059442adaf1c0c663021214e914c0f80b40cbba705e378aa4537  frontend/tsconfig.json
+cc1a7ad0d019ddb1d32d0ecb588ba0ac26ce41d8625dd6c366348b25f83a28ec  frontend/app/globals.css
+0a1c68bee42c0a7c0eb5eefd5fb8a3ce915ce2ad27bc03e15b6413c7cfbf45c3  frontend/app/layout.tsx
+e603bab6323002bbf61697ccfa538654910e9af18cd638893c321673ab732c77  frontend/app/page.tsx
+9e3b607586db1685bee13921142258196f98d0001ce90f2361cb21e1ee52e61f  frontend/app/providers.tsx
+88f717c21a80dc73423a06b82658e691732e888e9b3cbff53df9310c247f27c6  frontend/app/courses/.gitkeep
+88f717c21a80dc73423a06b82658e691732e888e9b3cbff53df9310c247f27c6  frontend/app/login/.gitkeep
+1d7474371e04a047ad12e9400c3e03ca6ebe0222291f71459d4ef07ad9580c88  frontend/components/StatusMessage.tsx
+6d433e31c56e46e8fc7d2e7916cbe9b0943967bc29596f74dbb433617d92f6b5  frontend/lib/format.ts
+635cd41971a45abcd9f3f9a960006ecfb73b1f60cfa0684b4c2140f6bd49e382  frontend/lib/api/client.ts
+88f717c21a80dc73423a06b82658e691732e888e9b3cbff53df9310c247f27c6  frontend/lib/api/services/.gitkeep
+98c16673051983e96ea403b73bb5ebd622827b6fd81f243f257918e6fd14ce52  frontend/lib/auth/authStore.ts
+2d6102ad6f1e6effe2373fff4568d5f573d5c2e4f4301ac840b35ab58a71c7ab  frontend/lib/types/api.ts
+8a444b382a308ca7c784f6a720e4d11f0b401ae0c3b556243d95dd2157ba5658  python/payouts.json
+141466a99d1642ba58a99a3ebc9ce3f1f574a855de0b602a6b71144986f74f0a  python/reconcile_earnings.py
+c7bdd2ad4b346ad6e8951a2a4df8c22da8ad3560345d624ba342008b72db8b49  wordpress-plugin/bemalearn.php
+52c59caaf49458a9870e06cc07e9c07bd3d5f049e0e964640520f20ce5584012  wordpress-plugin/docker-compose.yml
+5ef5046b5c793ba335ee720bdcfe74a78994c32496b33ffc168b550ead1c3fe2  wordpress-plugin/setup.sh
+56a025abe3fc63919d3f1927d4dd1b1308771bd02b827320b8a1afc9dd10ece6  wordpress-plugin/includes/class-bl-auth.php
+453d9e43679f68ea149b76ff332cdde1e6a3fef9c2aaa2a5cd5a29be9772dd7d  wordpress-plugin/includes/class-bl-courses-controller.php
+5e9525a6e88d2c16530e27382d8a3fab988b964faa2f40ee808e3d3a4d7164fa  wordpress-plugin/includes/class-bl-earnings-controller.php
+0e2a102ed02141ff936eca206e632fadee78a35a968fcda004d9e9428c39c122  wordpress-plugin/includes/class-bl-migrations.php
+70455fa7e9b8607da2f5c83fcb3551db04dfe2a602e01c8a75a54fa60393bea9  wordpress-plugin/includes/class-bl-seeder.php
+
+47 files
